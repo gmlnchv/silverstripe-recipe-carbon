@@ -1,0 +1,10 @@
+.main-header {
+  padding: $spacing-lg 0;
+  margin: 0 0 $layout-lg;
+
+  &__top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

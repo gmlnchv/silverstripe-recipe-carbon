@@ -1,0 +1,11 @@
+.top-nav {
+  > ul {
+    display: flex;
+
+    > li {
+      &:not(:last-child) {
+        margin-right: $spacing-2xl;
+      }
+    }
+  }
+}

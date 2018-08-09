@@ -1,0 +1,17 @@
+// 🔷 Carbon Design System
+// http://www.carbondesignsystem.com/getting-started/developers/vanilla
+
+// Re-declare Carbon variables
+// http://www.carbondesignsystem.com/getting-started/developers/vanilla#global-scss-variables
+@import './globals/variables';
+
+// Carbon Components
+// http://www.carbondesignsystem.com/components/overview
+@import '~carbon-components/scss/globals/scss/styles';
+
+// ⚙ Globals
+@import './globals/layout';
+
+// 🏗 Components
+@import './components/header';
+@import './components/navigation';

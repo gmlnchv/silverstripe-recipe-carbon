@@ -1,0 +1,5 @@
+/silverstripe-cache/
+/.env
+/vendor/
+/resources/
+/public/resources/

@@ -1,5 +1,6 @@
 /silverstripe-cache/
 /.env
+/raygun/
 /vendor/
 /resources/
 /public/resources/

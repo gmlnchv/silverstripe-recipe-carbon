@@ -1,5 +1,8 @@
----
 Name: myproject
 ---
 SilverStripe\Core\Manifest\ModuleManifest:
   project: app
+
+DNA\DNARaygun\RaygunHandler:
+  app_name: 'CARBON'
+

@@ -16,7 +16,12 @@ module.exports = merge(common, {
       {
         test: /\.(sa|sc|c)ss$/,
         // only use MiniCssExtractPlugin in production and without style-loader
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'postcss-loader',
+          'sass-loader'
+        ]
       }
     ]
   },

@@ -1,11 +1,26 @@
 // Redeclare global Carbon variables
 $css--font-face: false !default;
 $css--helpers: true !default;
-$css--body: true !default;
+
+// Use our own body styles
+$css--body: false !default;
+
 $css--use-experimental-grid: false !default;
 $css--use-experimental-grid-fallback: false !default;
 $css--use-layer: true !default;
 $css--reset: true !default;
 $css--typography: true !default;
+
+// Not using IBM fonts
 $css--plex: false !default;
+$font-family-mono: 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+  Courier, monospace !default;
+$font-family-sans-serif: Helvetica Neue, Arial, sans-serif !default;
+$font-family-serif: 'Georgia', Times, serif !default;
+$font-family-helvetica: Helvetica Neue, HelveticaNeue, Helvetica, sans-serif !default;
+
+// Grid
+$max-width: 1440px !default;
+
+// Replace the default "bx" prefix
 $prefix: dn !default;

@@ -1,5 +1,5 @@
-<footer class="footer" role="contentinfo">
+<footer class="site-footer" role="contentinfo">
   <div class="dn--grid max">
-    <small>$SiteConfig.Title &copy; $Now.Year</small>
+    <p class="site-footer__text">$SiteConfig.Title &copy; $Now.Year</p>
   </div>
 </footer>

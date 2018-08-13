@@ -3,15 +3,22 @@
 
 // Re-declare Carbon variables
 // http://www.carbondesignsystem.com/getting-started/developers/vanilla#global-scss-variables
-@import './globals/variables';
+@import 'globals/variables';
 
 // Carbon Components
 // http://www.carbondesignsystem.com/components/overview
 @import '~carbon-components/scss/globals/scss/styles';
 
 // ⚙ Globals
-@import './globals/layout';
+@import 'globals/layout';
+@import 'globals/typography';
+
+// 📄 Templates
+@import 'templates/page';
 
 // 🏗 Components
-@import './components/header';
-@import './components/navigation';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/form';
+@import 'components/navigation';
+@import 'components/page-header';

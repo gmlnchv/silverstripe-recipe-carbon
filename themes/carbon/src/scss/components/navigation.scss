@@ -6,6 +6,18 @@
       &:not(:last-child) {
         margin-right: $spacing-2xl;
       }
+
+      &.current {
+        border-bottom: 4px solid $ui-01;
+      }
+
+      > a {
+        display: inline-block;
+        font-weight: 600;
+        color: $ui-01;
+        text-decoration: none;
+        padding: $spacing-md 0;
+      }
     }
   }
 }

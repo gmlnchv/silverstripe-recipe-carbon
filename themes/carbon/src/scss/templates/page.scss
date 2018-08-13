@@ -1,0 +1,10 @@
+.page {
+  padding: $layout-lg 0 $layout-xl;
+
+  > p:not(:empty) {
+    // Measure (line-length) to improve readability
+    // See http://www.carbondesignsystem.com/style/typography/overview#line-length
+    max-width: 38rem;
+    margin: 0 0 $spacing-md;
+  }
+}

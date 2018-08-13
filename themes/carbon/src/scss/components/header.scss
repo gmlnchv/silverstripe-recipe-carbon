@@ -1,10 +1,17 @@
 .main-header {
-  padding: $spacing-lg 0;
-  margin: 0 0 $layout-lg;
+  background-color: $brand-01;
 
   &__top-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: $spacing-lg 0;
+  }
+
+  &__logo {
+    @include typescale('delta');
+    font-weight: 600;
+    color: $ui-01;
+    text-decoration: none;
   }
 }

@@ -1,0 +1,10 @@
+.site-footer {
+  padding: $spacing-3xl 0;
+  background-color: $ui-02;
+
+  &__text {
+    color: $ui-05;
+    font-size: 0.75rem;
+    margin-bottom: 0;
+  }
+}

@@ -16,9 +16,7 @@
     <% include Header %>
 
     <main id="maincontent" role="main">
-      <div class="dn--grid max">
-        $Layout
-      </div>
+      $Layout
     </main>
 
     <% include Footer %>

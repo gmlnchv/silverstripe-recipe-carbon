@@ -1,7 +1,13 @@
 body {
+  @include reset;
+  @include font-smoothing;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: $font-family-sans-serif;
+  color: $text-01;
+  background-color: $ui-01;
+  line-height: 1;
 }
 
 main {

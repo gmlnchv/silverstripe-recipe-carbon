@@ -1,0 +1,11 @@
+.dn--form-item {
+  margin-bottom: $spacing-lg;
+}
+
+.dn--radio-button-group {
+  flex-direction: column;
+
+  .dn--radio-button__label:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}

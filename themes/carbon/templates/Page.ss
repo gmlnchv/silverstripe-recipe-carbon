@@ -22,7 +22,7 @@
     <% include Footer %>
 
     <% if $WebpackDevServer %>
-      <script src="http://localhost:8081/main.js"></script>
+      <script src="http://localhost:4444/main.js"></script>
     <% else %>
       <% require themedJavascript('dist/main') %>
     <% end_if %>

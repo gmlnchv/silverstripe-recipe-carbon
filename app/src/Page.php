@@ -13,7 +13,7 @@ namespace {
 
         public function WebpackDevServer()
         {
-          return Director::isDev() && @fsockopen('localhost', 8081, $errno, $errstr, 1);
+          return Director::isDev() && @fsockopen('localhost', 4444, $errno, $errstr, 1);
         }
     }
 }

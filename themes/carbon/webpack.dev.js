@@ -7,7 +7,7 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   serve: {
     content: path.resolve(__dirname, 'dist'),
-    port: 8081
+    port: 4444
   },
   module: {
     rules: [

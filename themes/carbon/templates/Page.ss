@@ -8,8 +8,12 @@
     <title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> | $SiteConfig.Title</title>
     $MetaTags(false)
 
-    <% if not $WebpackDevServer %>
+    <% if not $isLiveReload %>
       <% require themedCss('dist/main') %>
+    <% end_if %>
+
+    <% if $isLiveReload %>
+      <script src="http://localhost:35729/livereload.js"></script>
     <% end_if %>
 </head>
 <body>
@@ -20,11 +24,6 @@
     </main>
 
     <% include Footer %>
-
-    <% if $WebpackDevServer %>
-      <script src="http://localhost:4444/main.js"></script>
-    <% else %>
-      <% require themedJavascript('dist/main') %>
-    <% end_if %>
+    <% require themedJavascript('dist/main') %>
 </body>
 </html>

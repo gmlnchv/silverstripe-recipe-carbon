@@ -11,9 +11,8 @@ namespace {
 
         private static $has_one = [];
 
-        public function WebpackDevServer()
-        {
-          return Director::isDev() && @fsockopen('localhost', 4444, $errno, $errstr, 1);
+        public function isLiveReload() {
+          return Director::isDev() && @fsockopen('localhost', 35729, $errno, $errstr, 1);
         }
     }
 }

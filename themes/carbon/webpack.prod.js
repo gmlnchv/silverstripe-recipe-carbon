@@ -14,7 +14,7 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
-        test: /\.(sa|sc|c)ss$/,
+        test: /\.(scss|sass)$/,
         // only use MiniCssExtractPlugin in production and without style-loader
         use: [
           MiniCssExtractPlugin.loader,
@@ -30,7 +30,6 @@ module.exports = merge(common, {
     // Mini CSS Extract plugin extracts CSS into separate files.
     // It creates a CSS file per JS file which contains CSS.
     // It supports On-Demand-Loading of CSS and SourceMaps.
-    // It requires webpack 4 to work.
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css'

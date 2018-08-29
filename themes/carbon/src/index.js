@@ -29,6 +29,13 @@ const init = () => {
   });
 };
 
-document.addEventListener('DOMContentLoaded', init);
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init()
+}
 
+// Doing it this way ensures that the rendered CSS is correct. Don’t try to import the SCSS file into another SCSS file unless you want to do major work on relative paths – it’s messy.
+// https://shellmonger.com/2016/01/22/working-with-fonts-with-webpack/
+import './static/fonts/roboto.scss';
 import './scss/styles.scss';

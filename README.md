@@ -15,7 +15,7 @@ cd themes/carbon
 npm install
 ```
 
-To start webpack development server with HMR, run:
+To start webpack live reload, run:
 
 ```
 npm start
@@ -25,6 +25,12 @@ To build production assets, run:
 
 ```
 npm run build
+```
+
+Using static assets in SCSS
+
+```
+background: url('../static/images/logo.svg');
 ```
 
 ## Links

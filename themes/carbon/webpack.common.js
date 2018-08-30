@@ -18,21 +18,43 @@ module.exports = {
             options: {
               name: '[name].[ext]',
               outputPath: 'fonts/',
-              publicPath: 'resources/themes/carbon/dist/fonts'
+              publicPath: '/resources/themes/carbon/dist/fonts'
             }
           }
         ]
       },
       {
-        test: /\.(bmp|gif|jpg|jpeg|png|svg)$/,
+        // Inline lightweight SVGs as UTF-8 encoded DataUrl string
+        // The result is smaller and faster to parse than base64
+        test: /\.svg$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: 'svg-url-loader',
             options: {
+              limit: 10 * 1024,
               name: '[name].[ext]',
               outputPath: 'images/',
-              publicPath: 'resources/themes/carbon/dist/images'
+              publicPath: '/resources/themes/carbon/dist/images'
             }
+          }
+        ]
+      },
+      {
+        // Inline lightweight images as Base64 encoded DataUrl string
+        test: /\.(jpe?g|png|gif)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10 * 1024,
+              name: '[name].[ext]',
+              outputPath: 'images/',
+              publicPath: '/resources/themes/carbon/dist/images'
+            }
+          },
+          // Pass images through optimisers
+          {
+            loader: 'image-webpack-loader'
           }
         ]
       }

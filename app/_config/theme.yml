@@ -6,3 +6,8 @@ SilverStripe\View\SSViewer:
     - '$public'
     - 'carbon'
     - '$default'
+
+StevieMayhew\SilverStripeSVG\SVGTemplate:
+  base_path: 'themes/carbon/dist/images/'
+  default_extra_classes:
+    - 'svg-image'

@@ -5,6 +5,9 @@
 // http://www.carbondesignsystem.com/getting-started/developers/vanilla#global-scss-variables
 @import 'globals/variables';
 
+// Carbon Theming Sandbox export
+@import 'globals/theme';
+
 // Carbon Components
 // http://www.carbondesignsystem.com/components/overview
 @import '~carbon-components/scss/globals/scss/styles';

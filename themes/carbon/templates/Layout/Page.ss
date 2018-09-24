@@ -3,7 +3,7 @@
 
 <div class="dn--grid max">
   <div class="page">
-    $Content
+    $ElementalArea
     $Form
   </div>
 </div>

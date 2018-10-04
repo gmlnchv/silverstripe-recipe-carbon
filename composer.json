@@ -5,9 +5,9 @@
         "silverstripe",
         "dna",
         "recipe",
-        "carbon"
+        "carbon-design-system"
     ],
-    "description": "SilverStripe installer and theme",
+    "description": "Custom SilverStripe installer",
     "require": {
         "php": ">=5.6.0",
         "silverstripe/environmentcheck": "^2.0.0",
@@ -16,7 +16,8 @@
         "silverstripe/recipe-cms": "^4.2.1",
         "symbiote/silverstripe-gridfieldextensions": "^3.1",
         "stevie-mayhew/silverstripe-svg": "^2.1",
-        "dnadesign/silverstripe-elemental": "3.0.x-dev"
+        "dnadesign/silverstripe-elemental": "3.0.x-dev",
+        "gmlnchv/carbon-theme": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7"
@@ -43,11 +44,14 @@
             "install-frameworkmissing.html",
             "install.php",
             "web.config"
-        ],
-        "expose": [
-            "themes/carbon/dist"
         ]
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/Users/georgy.malanichev/Sites/silverstripe-elemental-carbon-accordion"
+        }
+    ],
     "config": {
         "process-timeout": 600
     },

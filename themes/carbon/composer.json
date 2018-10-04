@@ -1,0 +1,15 @@
+{
+  "name": "gmlnchv/carbon-theme",
+  "description": "SilverStripe theme based on Carbon Design System",
+  "type": "silverstripe-theme",
+  "keywords": ["silverstripe", "theme", "carbon-design-system"],
+  "license": "BSD-3-Clause",
+  "extra": {
+    "installer-name": "carbon",
+    "expose": [
+      "dist"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
